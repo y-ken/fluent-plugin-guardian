@@ -15,6 +15,7 @@ I'm waiting your message via twitter or GitHub issues.
 2. fluent-plugin-guardian : monitoring status
   * check threshold (warn/crit)
   * check anomal sequential input
+  * support primary and secondary notify. (delayed notify with specific interval time)
 3. notify  
   works with fluentd plugins.
   * fluent-plugin-twilio : make a call with twilio
