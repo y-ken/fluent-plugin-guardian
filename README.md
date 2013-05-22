@@ -3,10 +3,11 @@ fluent-plugin-guardian
 
 Fluentd service to monitoring and automatic alerting suite.
 
-## Note
+## Notes
 
 **Currently, it's a conceptual planning phase.**  
-Please let me know the idea what you have wish to do by twitter or GitHub issues.
+Please let me know the idea what you have wish to do.  
+I'm waiting your message via twitter or GitHub issues.
 
 ## Overview / Design
 
@@ -23,7 +24,6 @@ Please let me know the idea what you have wish to do by twitter or GitHub issues
   * fluent-plugin-growl : popup notification at your client computer
   * fluent-plugin-twitter : tweet a sorry message to consumer
   * etc...
-
 
 ## Usage
 
@@ -48,6 +48,9 @@ edit `td-agent.conf` / `fluentd.conf`
   ex) guardian.app.ExampleWeb.forminputerror
 
 #### configure notify service
+
+You can use any fluentd output plugins.
+tag name should be `guardian.notifier.<name>`.
 
 ```
 <match guardian.notifier.twilio>
