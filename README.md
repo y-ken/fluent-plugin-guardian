@@ -7,7 +7,7 @@ Fluentd service to monitoring and automatic alerting suite.
 
 **Currently, it's a conceptual planning phase.**  
 Please let me know the idea what you have wish to do.  
-I'm waiting your message via twitter or GitHub issues.
+I'm waiting your message via Twitter or GitHub issues.
 
 ## Overview / Design
 
@@ -16,7 +16,7 @@ I'm waiting your message via twitter or GitHub issues.
   * check threshold (warn/crit)
   * check anomal sequential input
 3. notify  
-  works with fluentd plugins.
+  works with fluentd plugins.  
   also support primary and secondary notify. (delayed notify with specific interval time)
   * [fluent-plugin-twilio](https://github.com/y-ken/fluent-plugin-twilio) : make a call with twilio
   * [fluent-plugin-jabber](https://github.com/todesking/fluent-plugin-jabber) : chat notification with XMPP(Jabber)
