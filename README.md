@@ -26,6 +26,17 @@ I'm waiting your message via Twitter or GitHub issues.
   * [fluent-plugin-twitter](https://github.com/y-ken/fluent-plugin-twitter) : tweet a sorry message to consumer
   * etc...
 
+## Required middleware
+
+* Redis (as storing persistent configuration)  
+to store service list, server list and threshold of each.
+
+* Fluentd (as flexible log aggregater)  
+to collect application logs.
+
+* Munin (as server monitoring backend)  
+to fetch server load, memory, diskusage etc...
+
 ## Usage
 
 #### Configuration
@@ -86,17 +97,6 @@ $ guardian-cli set threshold <ip> <name>
 #### Redis schema
 
 TODO
-
-## Required middleware
-
-* Redis (as storing persistent configuration)  
-to store service list, server list and threshold of each.
-
-* Fluentd (as flexible log aggregater)  
-to collect application logs.
-
-* Munin (as server monitoring backend)  
-to fetch server load, memory, diskusage etc...
 
 ## Contact
 twitter: ([@yoshi_ken](https://twitter.com/yoshi_ken))
