@@ -15,15 +15,15 @@ I'm waiting your message via twitter or GitHub issues.
 2. fluent-plugin-guardian : monitoring status
   * check threshold (warn/crit)
   * check anomal sequential input
-  * support primary and secondary notify. (delayed notify with specific interval time)
 3. notify  
   works with fluentd plugins.
-  * fluent-plugin-twilio : make a call with twilio
-  * fluent-plugin-jabber : chat notification with XMPP(Jabber)
-  * fluent-plugin-hipchat : HipChat notification
-  * fluent-plugin-mail : send a mail
-  * fluent-plugin-growl : popup notification at your client computer
-  * fluent-plugin-twitter : tweet a sorry message to consumer
+  also support primary and secondary notify. (delayed notify with specific interval time)
+  * [fluent-plugin-twilio](https://github.com/y-ken/fluent-plugin-twilio) : make a call with twilio
+  * [fluent-plugin-jabber](https://github.com/todesking/fluent-plugin-jabber) : chat notification with XMPP(Jabber)
+  * [fluent-plugin-hipchat](https://github.com/hotchpotch/fluent-plugin-hipchat) : HipChat notification
+  * [fluent-plugin-mail](https://github.com/u-ichi/fluent-plugin-mail) : send a mail
+  * [fluent-plugin-growl](https://github.com/takei-yuya/fluent-plugin-growl) : popup notification at your client computer
+  * [fluent-plugin-twitter](https://github.com/y-ken/fluent-plugin-twitter) : tweet a sorry message to consumer
   * etc...
 
 ## Usage
