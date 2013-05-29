@@ -27,8 +27,8 @@ module Fluent
         :thread_safe => true, 
         :db => @db_number
       )
-      $log.info "starting guardian. host:#{@redis_host}"
-      @config = @redis.get("guardian:conf")
+      @config = JSON.parse(@redis.get("guardian:conf"))
+      $log.info "guardian: loading configuration. #{@config}"
     end
 
     def shutdown
