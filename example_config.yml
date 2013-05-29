@@ -1,25 +1,26 @@
-ExampleWeb: 
-  filter : [
-      "key" : "domain",
-      "type" : "equal",
-      "pattern" : "www.example.com"
+ExampleWeb:
+  filter: [
+    key: domain,
+    type: equal,
+    pattern: www.example.com
   ]
-  threshold : [
-    "unit" : "minute",
-    "count_key" : "staus",
-    "pattern" : {
-      "500" : "server_error"
+  threshold: [
+    unit: minute,
+    count_key: staus,
+    pattern: {
+      500: server_error,
+      502: server_error
     },
-    "warn" : 10,
-    "crit" : 20
+    warn: 10,
+    crit: 20
   ]
-  notify : [
+  notify: [
     {
-      "output" : "fluent-plugin-growl",
-      "delay_sec" : "60"
+      output: fluent-plugin-growl,
+      delay_sec: 60
     }, {
-      "output" : "fluent-plugin-twilio",
-      "delay_sec" : "300"
+      output: fluent-plugin-twilio,
+      delay_sec: 300
     }
   ]
 
